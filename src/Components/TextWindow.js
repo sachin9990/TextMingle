@@ -47,14 +47,13 @@ function TextWindow(props) {
 
             <div style={{ color: props.mode === 'light' ? 'black' : 'white' }} className="container my-4">
                 <h2>Your text summary</h2>
-                <p>Number of words: {text.split(/s+/).filter((element) => { return element.length !== 0 }).length}</p>
-                <p>Number of characters: {text.length}</p>
-                {/* <p>{text.split(" ").filter((element) => { return element.length !== 0 }).length} words and {text.length} characters</p> */}
+                {/* <p>Number of words: {text.split(/s+/).filter((element) => { return element.length !== 0 }).length}</p>
+                <p>Number of characters: {text.length}</p> */}
+                <p>{text.split(" ").filter((element) => { return element.length !== 0 }).length} words and {text.length} characters</p>
                 <p>Approximate time to read: {0.008 * (text.split(" ").filter((element) => { return element.length !== 0 }).length)} minutes.</p>
                 <p> <b>Raw Text:</b> {text.length > 0 ? text : "Put some text above"}</p>
             </div>
         </>
-
     )
 }
 

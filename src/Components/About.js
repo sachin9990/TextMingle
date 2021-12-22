@@ -14,7 +14,6 @@ function About(props) {
         backgroundColor: props.mode === 'dark' ? '#005c69' : 'white'
     }
 
-
     return (
         <div className="container" style={myStyle}>
             <h1>About Us</h1>
